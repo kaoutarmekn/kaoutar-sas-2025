@@ -9,12 +9,11 @@ int main()
     printf("Exposant >> ");
     scanf("%d",&Exposant);
 
-    for( int i = 1; i <= Exposant; i++)
+    for( int i = 1; i <= Exposant;  i++)
     {
        Resultat = Resultat * Base;
     }
     printf("Le resultat >>> %d",Resultat);
-
 
     return 0;
 }
