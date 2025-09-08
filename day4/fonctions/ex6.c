@@ -1,22 +1,31 @@
 #include <stdio.h>
 
-int Factoriel(int F )
+int Terme_Fibonacci(int T )
 {
-    int fact = 1;
-    for( int i = 1 ; i <= F; i++)
+    int U0 = 0, U1 = 1, Un;
+    if(T == 0) Un = 0;
+    else if (T == 1) Un = 1;
+    else 
     {
-      fact = fact * i ; 
+        for( int i = 2 ; i <= T ; i++ )
+        {
+             Un = U0 + U1;
+             U0 = U1;
+             U1 = Un;
+        }
+        
     }
-    return fact;
+   
+    return Un;
 }
 
 int main()
 {
-    int a , resultat ;
-    printf("Entrez un nombre >> ");
-    scanf("%d",&a);
-;
-    resultat = Factoriel(a);
-    printf("%d! >>> %d",a,resultat);
+    int T;
+    printf("Entrez le terme de la suite fibonacci >> ");
+    scanf("%d",&T);
+
+    int Terme = Terme_Fibonacci(T);
+    printf("Le %d terme donne >>> %d",T,Terme);
     return 0;
 }
