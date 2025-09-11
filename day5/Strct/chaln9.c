@@ -9,7 +9,7 @@ int ajout(float num) {
 }
 int main() {
     float add = 23.5;
-   strcpy(bank1.nom,"Hammaoui");
+   strcpy(bank1.nom,"elmeknassi");
    bank1.sold = 230;
     printf("%s tu ajout %.2f, votre sold maintenant est: %.2fDH",bank1.nom, add,bank1.sold);
 }
