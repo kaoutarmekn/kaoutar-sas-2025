@@ -28,10 +28,10 @@ int nb_cours = 0;
 int main(){
 
     if (nb_etudiant >= 100) {
-        printf("Limite d'etudiants atteinte.\n");
+        printf("Limite d'etudiant atteinte.\n");
         return;
     }
-    Etudiant e;
+    etudiant ;
 
 printf(" afficher la liste des etudiants : \n\n"); 
  printf("id: "); scanf("%d", &e.id);
